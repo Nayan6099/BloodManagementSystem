@@ -71,7 +71,7 @@ function ExamplesNavbar(props) {
           <div className="navbar-translate">
             <NavbarBrand id="navbar-brand">
               <NavLink to={getrefreshurl()} tag={Link}>
-                Blood Distribution
+                RAKTSETU
               </NavLink>
             </NavbarBrand>
 
@@ -103,12 +103,11 @@ function ExamplesNavbar(props) {
                         pathname: "/bloodintake",
                         // form vla page banane ka h
                         // hospital home
-                        // aboutProps: {
-                        //   name: "Blood bank",
-                        // },
+                         aboutProps: {
+                           name: "Blood bank",
+                         },
                       }}
-                      tag={Link}
-                    >
+                      tag={Link}>
                       Blood Intake Page
                     </NavLink>
                   </NavItem>
@@ -153,7 +152,7 @@ function ExamplesNavbar(props) {
                       }}
                       tag={Link}
                     >
-                      Login as Blood bank
+                     Blood bank Login
                     </NavLink>
                   </NavItem>
                   <NavItem>
@@ -166,12 +165,12 @@ function ExamplesNavbar(props) {
                       }}
                       tag={Link}
                     >
-                      Login as Hospital
+                      Hospital Login
                     </NavLink>
                   </NavItem>
                 </>
               )}
-              {/* <NavItem>
+               <NavItem>
                 <NavLink id="twitter-tooltip">
                   <i className="fab fa-twitter"></i>
                   <p className="d-lg-none d-xl-none">Twitter</p>
@@ -197,7 +196,7 @@ function ExamplesNavbar(props) {
                 <UncontrolledTooltip target="#instagram-tooltip">
                   Follow us on Instagram
                 </UncontrolledTooltip>
-              </NavItem> */}
+              </NavItem> 
             </Nav>
           </Collapse>
         </Container>

@@ -1,4 +1,5 @@
 import React from "react";
+//import  'assets/img/img5.png'
 
 // reactstrap components
 import { Button, Container } from "reactstrap";
@@ -28,7 +29,7 @@ function LandingPageHeader() {
           className="page-header-image"
           style={{
             backgroundImage:
-              "url(" + require("assets/img/landing.webp").default + ")",
+              "url(" + require("assets/img/img5.png").default + ")",
           }}
           ref={pageHeader}
         ></div>
@@ -36,7 +37,7 @@ function LandingPageHeader() {
           <Container>
             <h1 className="title">Reliability Visibility Security</h1>
             <div className="text-center">
-              {/* <Button
+               <Button
                 className="btn-icon btn-round"
                 color="info"
                 onClick={(e) => e.preventDefault()}
@@ -56,7 +57,7 @@ function LandingPageHeader() {
                 onClick={(e) => e.preventDefault()}
               >
                 <i className="fab fa-google-plus"></i>
-              </Button> */}
+              </Button> 
             </div>
           </Container>
         </div>

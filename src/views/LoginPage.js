@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import BlockchainContext from "../context/BlockChainContext";
 import globalContext from "../context/GlobalContext";
@@ -23,7 +23,7 @@ import {
 import ExamplesNavbar from "components/ExamplesNavbar.js";
 
 function LoginPage(props) {
-  const { web3, accounts, contract } = useContext(BlockchainContext);
+  const { accounts, contract } = useContext(BlockchainContext);
   const { SET_USER } = useContext(globalContext);
 
   const [firstFocus, setFirstFocus] = React.useState(false);
@@ -56,81 +56,81 @@ function LoginPage(props) {
 
   const populate_data = async (e) => {
     console.log("log", typeof accounts[0]);
-    // let d = [
-    //   {
-    //     name: "Vijayee Blood Bank",
-    //     id: "0x09bfdeb2e8beb791B30D5f1F2f38743810238B2D",
-    //     email: "bb1@gmail.com",
-    //     pass: "1234",
-    //     type: "1", // Blood bank
-    //     add: "Sector 22, Nerul, Navi Mumbai, Maharashtra 400706",
-    //     no: "+91 8446417448",
-    //     loc: "19.031413,73.016422",
-    //   },
-    //   {
-    //     name: "Prabodhan Blood Bank",
-    //     id: "0x24649364a4cC83c3C1cE9f6BAfC988BAd04E2C0C",
-    //     email: "bb2@gmail.com",
-    //     pass: "1234",
-    //     type: "1", // Blood bank
-    //     add: "Piramal Nagar, Goregaon West, Mumbai, Maharashtra 400104",
-    //     no: "+91 8446417448",
-    //     loc: "19.159587,72.845633",
-    //   },
-    //   {
-    //     name: "Ridhi sidhi Blood Bank",
-    //     id: "0xA185E5b84e0Fcf643D03E6d57E4e597Af729409d",
-    //     email: "bb3@gmail.com",
-    //     pass: "1234",
-    //     type: "1", // Blood bank
-    //     add: "Sector 8, Nerul, Navi Mumbai, Maharashtra 400706",
-    //     no: "+91 8446417448",
-    //     loc: "19.043413,73.015516",
-    //   },
-    //   {
-    //     name: "Bloodline Blood Bank",
-    //     id: "0x91747F539e803b584435C6444c031FDA04a9a783",
-    //     email: "bb4@gmail.com",
-    //     pass: "1234",
-    //     type: "1", // Blood bank
-    //     add: "Dr Ambedkar Rd, Thane West, Thane, Maharashtra 400601",
-    //     no: "+91 8446417448",
-    //     loc: "19.200753,72.974882",
-    //   },
-    //   {
-    //     name: "Samarpan Blood Centre",
-    //     id: "0xD856C173371a6189637334AFEDe18513C21313b6",
-    //     email: "bb5@gmail.com",
-    //     pass: "1234",
-    //     type: "1", // Blood bank
-    //     add: "Lal Bahadur Shastri Rd, Ghatkopar West, Mumbai, Maharashtra 400086",
-    //     no: "+91 8446417448",
-    //     loc: "19.09339,72.913659",
-    //   },
-    // ];
-    // for (var i = 0; i < d.length; i++) {
-    //   if (d[i]["id"] === accounts[0]) {
-    //     try {
-    //       await contract.methods
-    //         .addidentity(
-    //           d[i]["name"],
-    //           accounts[0],
-    //           d[i]["email"],
-    //           d[i]["pass"],
-    //           d[i]["type"],
-    //           d[i]["add"],
-    //           d[i]["no"],
-    //           d[i]["loc"]
-    //         )
-    //         .send({ from: accounts[0] });
+    let d = [
+      {
+        name: "Vijayee Blood Bank",
+        id: "0x09bfdeb2e8beb791B30D5f1F2f38743810238B2D",
+        email: "bb1@gmail.com",
+        pass: "1234",
+        type: "1", // Blood bank
+        add: "Sector 22, Nerul, Navi Mumbai, Maharashtra 400706",
+        no: "+91 8446417448",
+        loc: "19.031413,73.016422",
+      },
+      {
+        name: "Prabodhan Blood Bank",
+        id: "0x24649364a4cC83c3C1cE9f6BAfC988BAd04E2C0C",
+        email: "bb2@gmail.com",
+        pass: "1234",
+        type: "1", // Blood bank
+        add: "Piramal Nagar, Goregaon West, Mumbai, Maharashtra 400104",
+        no: "+91 8446417448",
+        loc: "19.159587,72.845633",
+      },
+      {
+        name: "Ridhi sidhi Blood Bank",
+        id: "0xA185E5b84e0Fcf643D03E6d57E4e597Af729409d",
+        email: "bb3@gmail.com",
+        pass: "1234",
+        type: "1", // Blood bank
+        add: "Sector 8, Nerul, Navi Mumbai, Maharashtra 400706",
+        no: "+91 8446417448",
+        loc: "19.043413,73.015516",
+      },
+      {
+        name: "Bloodline Blood Bank",
+        id: "0x91747F539e803b584435C6444c031FDA04a9a783",
+        email: "bb4@gmail.com",
+        pass: "1234",
+        type: "1", // Blood bank
+        add: "Dr Ambedkar Rd, Thane West, Thane, Maharashtra 400601",
+        no: "+91 8446417448",
+        loc: "19.200753,72.974882",
+      },
+      {
+        name: "Samarpan Blood Centre",
+        id: "0xD856C173371a6189637334AFEDe18513C21313b6",
+        email: "bb5@gmail.com",
+        pass: "1234",
+        type: "1", // Blood bank
+        add: "Lal Bahadur Shastri Rd, Ghatkopar West, Mumbai, Maharashtra 400086",
+        no: "+91 8446417448",
+        loc: "19.09339,72.913659",
+      },
+    ];
+    for (var i = 0; i < d.length; i++) {
+      if (d[i]["id"] === accounts[0]) {
+        try {
+          await contract.methods
+            .addidentity(
+              d[i]["name"],
+              accounts[0],
+              d[i]["email"],
+              d[i]["pass"],
+              d[i]["type"],
+              d[i]["add"],
+              d[i]["no"],
+              d[i]["loc"]
+            )
+            .send({ from: accounts[0] });
 
-    //       var ad = await contract.methods.getUserCount().call();
-    //       console.log(ad);
-    //     } catch (err) {
-    //       console.log("Error in creation", err);
-    //     }
-    //   }
-    // }
+          var ad = await contract.methods.getUserCount().call();
+          console.log(ad);
+        } catch (err) {
+          console.log("Error in creation", err);
+        }
+      }
+    }
 
     // creating hospital account
     try {
@@ -198,7 +198,7 @@ function LoginPage(props) {
           className="page-header-image"
           style={{
             backgroundImage:
-              "url(" + require("assets/img/login1.jpg").default + ")",
+              "url(" + require("assets/img/img2.jpg").default + ")",
           }}
         ></div>
         <div className="content">
@@ -210,7 +210,7 @@ function LoginPage(props) {
                     <div className="logo-container">
                       <img
                         alt="..."
-                        src={require("assets/img/now-logo.png").default}
+                        src={require("").default}
                       ></img>
                     </div>
                   </CardHeader>

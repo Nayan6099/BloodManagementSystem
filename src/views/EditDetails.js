@@ -20,7 +20,7 @@ import SendEmail from "components/SendEmail.js";
 import globalContext from "../context/GlobalContext";
 
 function EditDetails(props) {
-  // const [collectionDateFocus, setCollectionDateFocus] = React.useState(false);
+   //const [collectionDateFocus, setCollectionDateFocus] = React.useState(false);
   // const [emailToSend, setEmailToSend] = React.useState("");
   const { web3, accounts, contract } = useContext(BlockchainContext);
   const { user } = useContext(globalContext);
@@ -172,7 +172,7 @@ function EditDetails(props) {
               className="section section-signup"
               style={{
                 backgroundImage:
-                  "url(" + require("assets/img/bg4.jpeg").default + ")",
+                  "url(" + require("assets/img/img3.jpg").default + ")",
                 backgroundSize: "cover",
                 backgroundPosition: "top center",
                 minHeight: "700px",

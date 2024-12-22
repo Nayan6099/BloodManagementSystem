@@ -68,13 +68,13 @@ function BloodIntake() {
   const [data, setData] = useState({
     bloodId: "",
     batchNo: "",
-    // email: "",
-    // name: "",
+     email: "",
+     name: "",
     adharNo: "",
     bloodGroup: "", // input lena h
-    // age: "",
+     age: "",
     verified: false,
-    // collectionDate: new Date().toLocaleString().split(",")[0],
+     collectionDate: new Date().toLocaleString().split(",")[0],
     currentPosition: user.name,
     location: "",
     timestamp: new Date().toLocaleString() + "",
@@ -210,7 +210,7 @@ function BloodIntake() {
               className="section section-signup"
               style={{
                 backgroundImage:
-                  "url(" + require("assets/img/bg4.jpeg").default + ")",
+                  "url(" + require("assets/img/img4.jpg").default + ")",
                 backgroundSize: "cover",
                 backgroundPosition: "top center",
                 minHeight: "700px",
@@ -350,7 +350,7 @@ function BloodIntake() {
                           color="info"
                           size="lg"
                           onClick={formSubmit}
-                          // onClick={populate_data}
+                           //onClick={populate_data}
                         >
                           Add Details
                         </Button>

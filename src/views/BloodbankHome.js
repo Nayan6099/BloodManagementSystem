@@ -77,8 +77,8 @@ function BloodbankHome(props) {
                 id: i,
                 bloodId: tag["0"],
                 batchNo: tag["1"],
-                // email: "",
-                // name: "",
+                 email: "",
+                 name: "",
                 adharNo: tag["2"],
                 bloodGroup: tag["4"],
                 verified: tag2["3"],
@@ -126,7 +126,7 @@ function BloodbankHome(props) {
     e.preventDefault();
     history.push({
       pathname: "/editdetails",
-      // search: "?query=abc",
+       search: "?query=abc",
       state: {
         id: data[idx]["id"],
         bloodId: data[idx]["bloodId"],

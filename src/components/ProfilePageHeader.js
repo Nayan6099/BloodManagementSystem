@@ -33,7 +33,7 @@ function ProfilePageHeader(props) {
           className="page-header-image"
           style={{
             backgroundImage:
-              "url(" + require("assets/img/bg1.jpg").default + ")",
+              "url(" + require("assets/img/img1.jpg").default + ")",
           }}
           ref={pageHeader}
         ></div>
@@ -42,14 +42,16 @@ function ProfilePageHeader(props) {
             <img alt="..." src='https://picsum.photos/200'></img>
           </div>
           <h3 className="title">{props.name}</h3>
-          <p className="category">{props.bloodcount === {} && "Current blood count status"}</p>
+          {/* <p className="category">{props.bloodcount === {} && "Current blood count status"}</p> */}
+          <p className="category">{Object.keys(props.bloodcount).length === 0 && "Current blood count status"}</p>
+
           <div className="row">
             {Object.entries(props.bloodcount).map(([key, value], i) => (
               <>
-                {/* <div className="social-description" style={{display: 'flex', flexDirection: 'row'}}>
+                 <div className="social-description" style={{display: 'flex', flexDirection: 'row'}}>
                   <h2>{value}</h2>
                   <p>{key}</p>
-                </div> */}
+                </div> 
 
                 <div className="ml-auto mr-auto my-5">
                   <div

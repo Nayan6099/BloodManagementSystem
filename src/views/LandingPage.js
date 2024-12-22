@@ -50,7 +50,7 @@ function LandingPage() {
                     className="image-container image-left"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/login1.jpg").default + ")",
+                        "url(" + require("assets/img/img1.jpg").default + ")",
                     }}
                   >
                     <p className="blockquote blockquote-info">
@@ -65,7 +65,7 @@ function LandingPage() {
                     className="image-container"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg2.jpg").default + ")",
+                        "url(" + require("assets/img/img3.jpg").default + ")",
                     }}
                   ></div>
                 </Col>
@@ -74,7 +74,7 @@ function LandingPage() {
                     className="image-container image-right"
                     style={{
                       backgroundImage:
-                        "url(" + require("assets/img/bg3.jpg").default + ")",
+                        "url(" + require("assets/img/img3.jpg").default + ")",
                     }}
                   ></div>
                   <h3>

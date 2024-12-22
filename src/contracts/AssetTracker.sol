@@ -1,4 +1,4 @@
-// SPDX-License-Identifier: MIT
+ SPDX-License-Identifier: MIT
 pragma solidity >=0.4.22 <0.9.0;
 
 library AssetLibrary {
@@ -22,7 +22,7 @@ library AssetLibrary {
     }
 
     struct Login {
-        // uint id;
+        uint id;
         address payable user_address;
         string email;
         string password;

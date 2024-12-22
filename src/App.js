@@ -34,7 +34,7 @@ const getWeb3 = async () => {
             // Request account access if needed
             await window.ethereum.enable();
             // console.log(tempWeb3);
-            //console.log(web3.eth.getAccounts());
+            // console.log(web3.eth.getAccounts());
             // Acccounts now exposed
         } catch (error) {
             // User denied account access...

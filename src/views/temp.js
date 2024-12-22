@@ -20,7 +20,7 @@ import ProfilePageHeader from "components/ProfilePageHeader.js";
 const ref = React.createRef();
 
 function Temp() {
-  // const [pills, setPills] = React.useState("2");
+   const [pills, setPills] = React.useState("2");
 
   const [data, setData] = useState({
     selectedBloodGroup: "select",
@@ -134,13 +134,13 @@ function Temp() {
                 Visit us here
               </UncontrolledTooltip>
             </div>
-            {/* <h3 className="title">About me</h3>
+             <h3 className="title">About me</h3>
             <h5 className="description">
               An artist of considerable range, Ryan — the name taken by
               Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs
               and records all of his own music, giving it a warm, intimate feel
               with a solid groove structure. An artist of considerable range.
-            </h5> */}
+            </h5> 
 
             <div className="section section-contact-us text-center">
               <Container>
