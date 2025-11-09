@@ -22,14 +22,18 @@ function LandingPageHeader() {
       };
     }
   });
+
   return (
     <>
       <div className="page-header page-header-small">
         <div
           className="page-header-image"
+          // style={{
+          //   backgroundImage:
+          //     "url(" + require("assets/img/img5.png").default + ")",
+          // }}
           style={{
-            backgroundImage:
-              "url(" + require("assets/img/img5.png").default + ")",
+            backgroundImage: `url(${require("assets/img/img3.jpg")})`,
           }}
           ref={pageHeader}
         ></div>

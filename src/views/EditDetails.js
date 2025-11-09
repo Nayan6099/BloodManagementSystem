@@ -76,7 +76,7 @@ function EditDetails(props) {
         } catch (err) {
           console.log("Error in Transfer function", err);
         }
-        // ---------- Generating and downloading QR code
+        // ---------- Generating and downloading QR code------------------------------------------------------------------------------------
         console.log(
           "Generating QR code of",
           props.location.state.adharNo

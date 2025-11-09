@@ -197,8 +197,7 @@ function LoginPage(props) {
         <div
           className="page-header-image"
           style={{
-            backgroundImage:
-              "url(" + require("assets/img/img2.jpg").default + ")",
+            backgroundImage: `url(${require("assets/img/img2.jpg")})`,
           }}
         ></div>
         <div className="content">
@@ -208,10 +207,11 @@ function LoginPage(props) {
                 <Form action="" className="form" method="">
                   <CardHeader className="text-center">
                     <div className="logo-container">
-                      <img
-                        alt="..."
-                        src={require("").default}
-                      ></img>
+                    <img
+                       alt="..."
+                          src={require("assets/img/now-logo.jpg")}
+                        />
+
                     </div>
                   </CardHeader>
                   <CardBody>

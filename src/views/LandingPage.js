@@ -49,8 +49,7 @@ function LandingPage() {
                   <div
                     className="image-container image-left"
                     style={{
-                      backgroundImage:
-                        "url(" + require("assets/img/img1.jpg").default + ")",
+                      backgroundImage: `url(${require("assets/img/img4.jpg")})`,
                     }}
                   >
                     <p className="blockquote blockquote-info">
@@ -64,8 +63,7 @@ function LandingPage() {
                   <div
                     className="image-container"
                     style={{
-                      backgroundImage:
-                        "url(" + require("assets/img/img3.jpg").default + ")",
+                      backgroundImage: `url(${require("assets/img/img1.jpg")})`,
                     }}
                   ></div>
                 </Col>
@@ -73,8 +71,7 @@ function LandingPage() {
                   <div
                     className="image-container image-right"
                     style={{
-                      backgroundImage:
-                        "url(" + require("assets/img/img3.jpg").default + ")",
+                      backgroundImage: `url(${require("assets/img/img6.jpg")})`,
                     }}
                   ></div>
                   <h3>

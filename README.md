@@ -1,16 +1,3 @@
-# KJHack-Brogrammers
-
-## एक-रक्त
-
-### A blood distribution system that not only ensures the immutability of the donor’s data but also provides transparency, and effective management of surplus blood, and prevents blood distribution frauds.
-
-## Links : 
-
-- [Video Demo](https://youtu.be/YA6vNJ2AvEg)
-- [Hosted Live Here](https://ekrakt.netlify.app/)
-- [Deployed Matic Polygon Blockchain Network](https://mumbai.polygonscan.com/address/0xFf4D391053fAde548A21fA9Cc032b9b85375f0ED)
-
-### What are we solving :
 
 ![Alt text](src/Readme/1.png?raw=true "Title")
 

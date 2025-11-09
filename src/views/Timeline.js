@@ -167,8 +167,7 @@ function Timeline(props) {
           <div
             className="page-header-image"
             style={{
-              backgroundImage:
-                "url(" + require("assets/img/img2.jpg").default + ")",
+              backgroundImage: `url(${require("assets/img/img1.jpg")})`,
             }}
           ></div>
           <div className="content">
@@ -180,7 +179,7 @@ function Timeline(props) {
                       <div className="logo-container">
                         <img
                           alt="..."
-                          src={require("assets/img/now-logo.jpg").default}
+                          src={require("assets/img/now-logo.jpg")}
                         ></img>
                       </div>
                     </CardHeader>
@@ -249,9 +248,7 @@ function Timeline(props) {
            onClick={toggleShow}
           className="page-header-image pt-5 pb-5 justify-content-center"
           style={{
-            color: "black",
-            backgroundImage:
-              "url(" + require("assets/img/img2.jpg").default + ")",
+            backgroundImage: `url(${require("assets/img/img3.jpg")})`,
           }}
         >
           <MyTimeLine timelineData={timelineData} />

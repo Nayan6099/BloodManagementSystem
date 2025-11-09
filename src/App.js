@@ -33,8 +33,8 @@ const getWeb3 = async () => {
         try {
             // Request account access if needed
             await window.ethereum.enable();
-            // console.log(tempWeb3);
-            // console.log(web3.eth.getAccounts());
+             console.log(tempWeb3);
+             //console.log(web3.eth.getAccounts());
             // Acccounts now exposed
         } catch (error) {
             // User denied account access...
@@ -55,13 +55,26 @@ const getWeb3 = async () => {
 
     return tempWeb3;
 };
+//-----------------------------------------------------------------------------------------------------------------------------------------------------
+// if (window.ethereum) {
+//     const web3 = new Web3(window.ethereum);
+//     try {
+//         // Request account access
+//         await window.ethereum.request({ method: 'eth_requestAccounts' });
+//         console.log("MetaMask connected");
+//     } catch (error) {
+//         console.error("User denied account access");
+//     }
+// } else {
+//     console.log('MetaMask not installed');
+// }
+//----------------------------------------------------------------------------------------------------------------------------------------------------------
 
 const App = () => {
     const [web3, setWeb3] = useState(undefined);
     const [accounts, setAccounts] = useState([]);
     const [contract, setContract] = useState();
-
-    useEffect(() => {
+  useEffect(() => {
         const init = async () => {
             // load web3
             const tempWeb3 = await getWeb3();
@@ -107,8 +120,6 @@ const App = () => {
 
         init();
     }, []);
-
-
     return (
         <GlobalState >
             <BlockchainContext.Provider value={{ web3, accounts, contract }}>
