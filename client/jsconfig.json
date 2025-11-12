@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "ignoreDeprecations": "6.0",
+    "baseUrl": "src",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@views/*": ["views/*"],
+      "@context/*": ["context/*"],
+      "@assets/*": ["assets/*"],
+      "@services/*": ["services/*"]
+    }
+  },
+  "include": ["src"]
+}

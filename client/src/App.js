@@ -1,6 +1,6 @@
 import React, { Component, useEffect, useState } from "react";
 import Web3 from "web3";
-import freelance from "../src/build/contracts/AssetTracker.json"
+import freelance from "./build/contracts/AssetTracker.json"
 
 import BlockchainContext from "./context/BlockChainContext";
 import ReactDOM from "react-dom";
